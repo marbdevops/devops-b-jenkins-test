@@ -52,7 +52,7 @@ pipeline {
 
     stage('Docker Build') {
             steps {
-                withCredentials([string(credentialsId: 'DOCKER_TOKEN', variable: 'DOCKER_PASSWD')]) 
+                withCredentials([string(credentialsId: 'DOCKER_TKN', variable: 'DOCKER_PASSWD')]) 
                 {
                 
                     sh 'docker build . -t marbdevops/k8s-test:latest'
