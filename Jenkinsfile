@@ -34,7 +34,7 @@ pipeline {
         stage('App-Code-Checkout-GitHUB') {
             steps {
 
-            	git branch: 'appBranch' , url: 'https://github.com/marbdevops/devops-b-jenkins-test.git'
+            	git branch: 'main' , url: 'https://github.com/marbdevops/devops-b-jenkins-test.git'
         
                 //echo 'Hello World'
                 //sh 'hostname'
