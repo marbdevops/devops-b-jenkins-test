@@ -56,7 +56,7 @@ pipeline {
                 
                 
                     sh 'docker build . -t marbdevops/k8s-test2:latest'
-                    sh 'docker login -u marbdevops -p dckr_pat_QVafKTR1KUAvYU60ZiAC_VCeGuI'
+                    sh 'docker login -u marbdevops -p '
                     sh 'docker push marbdevops/k8s-test2:latest'
                 
 
